@@ -30,8 +30,8 @@
   <pre style='background-color: transparent; border: none;'>
 </pre>
   <pre>
-<div id="header"><center><h2>VLESS CLOUDFLARE FREE</h2><div id="resultip"></div> <div id="ipData" data-ip="35.219.50.99"></div></center> <em><span style="color: red;">NOTE:</span> Silahkan kalian pilih settingan untuk inject sesuai paket kalian.</em> </div> <div hidden class="divContent" id="cfgvid">
-<center><h2>VLESS CLOUDFLARE FREE</h2></center>
+<div id="header"><center><h2>SERVER INDONESIA</h2><div id="resultip"></div> <div id="ipData" data-ip="35.219.50.99"></div></center> <em><span style="color: red;">NOTE:</span> Silahkan kalian pilih settingan untuk inject sesuai paket kalian.</em> </div> <div hidden class="divContent" id="cfgvid">
+<center><h2>SERVER RUMAHWEB</h2></center>
 
 <em><span style="color: red;">NOTE:</span> Settingan ini untuk inject paket VIDIO, kalian tinggal salin dan tempel pada apk yang kalian gunakan untuk inject.</em>
 
@@ -39,49 +39,48 @@
 ===========================================
 × Vless port 443
 ===========================================
-vless://dfc3ad71-4ab8-424e-b5f7-965d18153ccb@quiz.staging.vidio.com:443?encryption=none&security=tls&sni=id.bodongvl.filegear-sg.me&fp=randomized&type=ws&host=id.bodongvl.filegear-sg.me&path=%2Fvless-bodong#VLESS-VIDIO
-<button onclick='copyToClipboard("vless://dfc3ad71-4ab8-424e-b5f7-965d18153ccb@quiz.staging.vidio.com:443?encryption=none&security=tls&sni=id.bodongvl.filegear-sg.me&fp=randomized&type=ws&host=id.bodongvl.filegear-sg.me&path=%2Fvless-bodong#VLESS-VIDIO")'><i class="fa fa-clipboard"></i> Copy vless 443</button>
+vless://b4cfc28f-efec-41e4-bda7-dba28196ef18@id1.taoomatoa.cloud:443?encryption=none&security=tls&sni=id1.taoomatoa.cloud&fp=randomized&type=ws&host=id1.taoomatoa.cloud&path=/id-rweb#id1.taoomatoa.cloud(Taoo)
+<button onclick='copyToClipboard("vless://b4cfc28f-efec-41e4-bda7-dba28196ef18@id1.taoomatoa.cloud:443?encryption=none&security=tls&sni=id1.taoomatoa.cloud&fp=randomized&type=ws&host=id1.taoomatoa.cloud&path=/id-rweb#id1.taoomatoa.cloud(Taoo)")'><i class="fa fa-clipboard"></i> Copy vless 443</button>
 ===========================================
 × Vless port 80
 ===========================================
-vless://dfc3ad71-4ab8-424e-b5f7-965d18153ccb@quiz.staging.vidio.com:80?encryption=none&security=none&type=ws&host=id.bodongvl.filegear-sg.me&path=%2Fvless-bodong#VLESS-VIDIO
-<button onclick='copyToClipboard("vless://dfc3ad71-4ab8-424e-b5f7-965d18153ccb@quiz.staging.vidio.com:80?encryption=none&security=none&type=ws&host=id.bodongvl.filegear-sg.me&path=%2Fvless-bodong#VLESS-VIDIO")'><i class="fa fa-clipboard"></i> Copy vless 80</button>
+vless://b4cfc28f-efec-41e4-bda7-dba28196ef18@id1.taoomatoa.cloud:80?encryption=none&security=none&fp=randomized&type=ws&host=id1.taoomatoa.cloud&path=/id-rweb#id1.taoomatoa.cloud(Taoo)
+<button onclick='copyToClipboard("vless://b4cfc28f-efec-41e4-bda7-dba28196ef18@id1.taoomatoa.cloud:80?encryption=none&security=none&fp=randomized&type=ws&host=id1.taoomatoa.cloud&path=/id-rweb#id1.taoomatoa.cloud(Taoo)")'><i class="fa fa-clipboard"></i> Copy vless 80</button>
 ===========================================
 × Config Openclash
 ===========================================
-  - name: VLESS-VIDIO
-    server: quiz.staging.vidio.com
-    port: 443
-    type: vless
-    uuid: dfc3ad71-4ab8-424e-b5f7-965d18153ccb
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: id.bodongvl.filegear-sg.me
-    network: ws
-    ws-opts:
-      path: /vless-bodong
-      headers:
-        Host: id.bodongvl.filegear-sg.me
-    udp: true
+- name: Rumahweb (Taoo)
+  server: id1.taoomatoa.cloud
+  type: vless
+  port: 443
+  uuid: b4cfc28f-efec-41e4-bda7-dba28196ef18
+  tls: true
+  skip-cert-verify: true
+  servername: id1.taoomatoa.cloud
+  network: ws
+  ws-opts:
+    path: /id-rweb
+    headers:
+      Host: id1.taoomatoa.cloud
+  udp: true
+
 <button onclick='copyclash("code")'><i class="fa fa-clipboard"></i> Copy Openclash</button>  
 ===========================================
 <div hidden id="code">
-  - name: VLESS-VIDIO
-    server: quiz.staging.vidio.com
-    port: 443
-    type: vless
-    uuid: dfc3ad71-4ab8-424e-b5f7-965d18153ccb
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: id.bodongvl.filegear-sg.me
-    network: ws
-    ws-opts:
-      path: /vless-bodong
-      headers:
-        Host: id.bodongvl.filegear-sg.me
-    udp: true  </div> </div> <div hidden class="divContent" id="cfgbiz"> <center><h2>VLESS CLOUDFLARE FREE</h2></center>
+- name: Rumahweb (Taoo)
+  server: id1.taoomatoa.cloud
+  type: vless
+  port: 443
+  uuid: b4cfc28f-efec-41e4-bda7-dba28196ef18
+  tls: true
+  skip-cert-verify: true
+  servername: id1.taoomatoa.cloud
+  network: ws
+  ws-opts:
+    path: /id-rweb
+    headers:
+      Host: id1.taoomatoa.cloud
+  udp: true  </div> </div> <div hidden class="divContent" id="cfgbiz"> <center><h2>VLESS CLOUDFLARE FREE</h2></center>
 
 <em><span style="color: red;">NOTE:</span> Settingan ini untuk inject paket BIZ+, kalian tinggal salin dan tempel pada apk yang kalian gunakan untuk inject.</em>
 
@@ -89,12 +88,12 @@ vless://dfc3ad71-4ab8-424e-b5f7-965d18153ccb@quiz.staging.vidio.com:80?encryptio
 ===========================================
 × Vless port 443
 ===========================================
-vless://dfc3ad71-4ab8-424e-b5f7-965d18153ccb@support.zoom.us:443?encryption=none&security=tls&sni=support.zoom.us.id.bodongvl.filegear-sg.me&fp=randomized&type=ws&host=support.zoom.us.id.bodongvl.filegear-sg.me&path=%2Fvless-bodong#VLESS-BIZ
-<button onclick='copyToClipboard("vless://dfc3ad71-4ab8-424e-b5f7-965d18153ccb@support.zoom.us:443?encryption=none&security=tls&sni=support.zoom.us.id.bodongvl.filegear-sg.me&fp=randomized&type=ws&host=support.zoom.us.id.bodongvl.filegear-sg.me&path=%2Fvless-bodong#VLESS-BIZ")'><i class="fa fa-clipboard"></i> Copy vless 443</button>
+vless://527efc63-d9f6-4821-8203-f23413b6fb0d@id2.taoomatoa.cloud:443?encryption=none&security=tls&sni=id2.taoomatoa.cloud&fp=randomized&type=ws&host=id2.taoomatoa.cloud&path=/id-beon#Beon(Taoo)
+<button onclick='copyToClipboard("vless://527efc63-d9f6-4821-8203-f23413b6fb0d@id2.taoomatoa.cloud:443?encryption=none&security=tls&sni=id2.taoomatoa.cloud&fp=randomized&type=ws&host=id2.taoomatoa.cloud&path=/id-beon#Beon(Taoo)")'><i class="fa fa-clipboard"></i> Copy vless 443</button>
 ===========================================
 × Vless port 80
 ===========================================
-vless://dfc3ad71-4ab8-424e-b5f7-965d18153ccb@support.zoom.us:80?encryption=none&security=none&type=ws&host=support.zoom.us.id.bodongvl.filegear-sg.me&path=%2Fvless-bodong#VLESS-BIZ
+vless://527efc63-d9f6-4821-8203-f23413b6fb0d@id2.taoomatoa.cloud:80?encryption=none&security=none&fp=randomized&type=ws&host=id2.taoomatoa.cloud&path=/id-beon#Beon(Taoo)
 <button onclick='copyToClipboard("vless://dfc3ad71-4ab8-424e-b5f7-965d18153ccb@support.zoom.us:80?encryption=none&security=none&type=ws&host=support.zoom.us.id.bodongvl.filegear-sg.me&path=%2Fvless-bodong#VLESS-BIZ")'><i class="fa fa-clipboard"></i> Copy vless 80</button>
 ===========================================
 × Config Openclash
