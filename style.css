@@ -1,0 +1,77 @@
+  :root {
+            --main-font-family: monospace;
+        }
+
+        * {
+            font-family: var(--main-font-family);
+        }
+body {
+	
+	  background-color: #f0f0f0;
+	  color: #333;
+	  padding: 10px;
+	  max-width: 100%; /* Menetapkan lebar maksimum untuk body */
+        margin-left: auto;
+        margin-right: auto;
+	}
+
+	a {
+	  color: #1a0dab;
+	  text-decoration: none;
+	}
+	img {
+	  max-width: 100%;
+	  height: auto;
+	}
+
+	pre {
+	  white-space: pre-wrap;
+	  word-wrap: break-word;
+	  background-color: #fff;
+	  border: 1px solid #ddd;
+	  padding: 15px;
+	  margin: 0;
+	}
+	/* Dark mode */
+	@media (prefers-color-scheme: dark) {
+	  body {
+		background-color: #333;
+		color: #f0f0f0;
+	  }
+
+	  a {
+		color: #9db4ff;
+	  }
+
+	  pre {
+		background-color: #282a36;
+		border-color: #6272a4;
+	  }
+	  
+	}
+	
+button {
+  text-align: center;
+  font-family: monospace;
+  background-color: #f3f7fe;
+  color: #3b82f6;
+  border: none;
+  border-radius: 8px;
+  width: fit-content;
+  height: 30px;
+  transition: .3s;
+}
+
+button:hover {
+  background-color: #3b82f6;
+  box-shadow: 0 0 0 5px #3b83f65f;
+  color: #fff;
+}
+
+
+
+hidden {
+    display: none;
+    height: 1px;
+    overflow: hidden;
+}	
