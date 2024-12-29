@@ -34,48 +34,42 @@
 ==========================================
 × Vless port 443
 ==========================================
-vless://b4cfc28f-efec-41e4-bda7-dba28196ef18@id1.taoomatoa.cloud:443?encryption=none&security=tls&sni=id1.taoomatoa.cloud&fp=randomized&type=ws&host=id1.taoomatoa.cloud&path=/id-rweb#Cloud (Taoo)
-<button onclick='copyToClipboard("vless://b4cfc28f-efec-41e4-bda7-dba28196ef18@id1.taoomatoa.cloud:443?encryption=none&security=tls&sni=id1.taoomatoa.cloud&fp=randomized&type=ws&host=id1.taoomatoa.cloud&path=/id-rweb#Cloud (Taoo)")'><i class="fa fa-clipboard"></i> Copy vless 443</button>
-==========================================
-× Vless port 80
-==========================================
-vless://b4cfc28f-efec-41e4-bda7-dba28196ef18@id1.taoomatoa.cloud:80?encryption=none&security=none&fp=randomized&type=ws&host=id1.taoomatoa.cloud&path=/id-rweb#Cloud (Taoo)
-<button onclick='copyToClipboard("vless://b4cfc28f-efec-41e4-bda7-dba28196ef18@id1.taoomatoa.cloud:80?encryption=none&security=none&fp=randomized&type=ws&host=id1.taoomatoa.cloud&path=/id-rweb#Cloud (Taoo)")'><i class="fa fa-clipboard"></i> Copy vless 80</button>
+vless://2d31d87f-78bf-4410-97c9-a8a083211eb7@taoovpn.cloud:443?encryption=none&security=tls&sni=taoovpn.cloud&fp=randomized&type=ws&host=taoovpn.cloud&path=%2F%3Fed%3D2048#Pt Cloud Teknologi 🇮🇩 (ID)
+<button onclick='copyToClipboard("vless://2d31d87f-78bf-4410-97c9-a8a083211eb7@taoovpn.cloud:443?encryption=none&security=tls&sni=taoovpn.cloud&fp=randomized&type=ws&host=taoovpn.cloud&path=%2F%3Fed%3D2048#Pt Cloud Teknologi 🇮🇩 (ID)")'><i class="fa fa-clipboard"></i> Copy vless 443</button>
 ==========================================
 × Config Openclash
 ==========================================
-  - name: Cloud (Taoo)
-    server: id1.taoomatoa.cloud
-    port: 443
-    type: vless
-    uuid: b4cfc28f-efec-41e4-bda7-dba28196ef18
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: id1.taoomatoa.cloud
-    network: ws
-    ws-opts:
-      path: /id-rweb
-      headers:
-        Host: id1.taoomatoa.cloud
-    udp: true
+- name: Pt Cloud Teknologi 🇮🇩 (ID)
+  server: taoovpn.cloud
+  type: vless
+  port: 443
+  uuid: 2d31d87f-78bf-4410-97c9-a8a083211eb7
+  tls: true
+  skip-cert-verify: true 
+  servername: taoovpn.cloud
+  network: ws
+  ws-opts: 
+   path: /?ed=2048
+   Headers: 
+      Host: taoovpn.cloud
+  udp: true
+
 <button onclick='copyclash("code")'><i class="fa fa-clipboard"></i> Copy Openclash</button>  
 ==========================================
 <div hidden id="code">
-- name: Cloud (Taoo)
-  server: id1.taoomatoa.cloud
-  port: 443
+- name: Pt Cloud Teknologi 🇮🇩 (ID)
+  server: taoovpn.cloud
   type: vless
-  uuid: b4cfc28f-efec-41e4-bda7-dba28196ef18
-  cipher: auto
+  port: 443
+  uuid: 2d31d87f-78bf-4410-97c9-a8a083211eb7
   tls: true
-  skip-cert-verify: true
-  servername: id1.taoomatoa.cloud
+  skip-cert-verify: true 
+  servername: taoovpn.cloud
   network: ws
-  ws-opts:
-    path: /id-rweb
-    headers:
-      Host: id1.taoomatoa.cloud
+  ws-opts: 
+   path: /?ed=2048
+   Headers: 
+      Host: taoovpn.cloud
   udp: true  </div> </div>
 
 <center><button style="color: red" onclick="window.location.href='https://taoomatoa.github.io/free/serverid'">Kembali</button>
