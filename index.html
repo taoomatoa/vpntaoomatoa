@@ -1,125 +1,370 @@
-<!DOCTYPE HTML>
-  <html lang="en">
-  <head>
-	<title>VPN BY TAOOMATOA</title>
-	<meta name='description' content='Vless by taoomatoa ini gratis silahkan pakai sampai down.'>
-	<meta name='keywords' content='Vless taoomatoa, taoomatoa Vless, Vless Gratis, Vless Cloudflare'>
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta property='og:site_name' content='VLESS BY TAOOMATOA.' />
-	<meta property='og:type' content='website' />
-	<meta property='og:title' content='Jika ingin share tambahkan credit telegram saya!' />
-	<meta property='og:description' content='Vless by taoomatoa ini gratis silahkan pakai sampai down.' />
-	<meta property='og:url' content='https://taoomatoa.github.io/vpntaoomatoa/' />
-	<meta name='twitter:card' content='summary_large_image' />
-	<meta name='twitter:title' content='Jika ingin share tambahkan credit telegram saya!' />
-	<meta name='twitter:description' content='Vless by bodong ini gratis silahkan pakai sampai down.' />
-	<meta name='twitter:url' content='https://taoomatoa.github.io/vpntaoomatoa/' />
-	<meta property='og:image:width' content='1500' />
-	<meta property='og:image:height' content='1500' />
-	<style>
-	
-	body {
-	  font-family: Arial, sans-serif;
-	  background-color: #f0f0f0;
-	  color: #333;
-	  padding: 10px;
-	  max-width: 100%; /* Menetapkan lebar maksimum untuk body */
-        margin-left: auto;
-        margin-right: auto;
-	}
-
-	a {
-	  color: #1a0dab;
-	  text-decoration: none;
-	}
-	img {
-	  max-width: 100%;
-	  height: auto;
-	}
-
-	pre {
-	  white-space: pre-wrap;
-	  word-wrap: break-word;
-	  background-color: #fff;
-	  border: 1px solid #ddd;
-	  padding: 15px;
-	  margin: 0;
-	}
-	/* Dark mode */
-	@media (prefers-color-scheme: dark) {
-	  body {
-		background-color: #333;
-		color: #f0f0f0;
-	  }
-
-	  a {
-		color: #9db4ff;
-	  }
-
-	  pre {
-		background-color: #282a36;
-		border-color: #6272a4;
-	  }
-	  
-	}
-	
-button {
-  text-align: center;
-  font-family: monospace;
-  background-color: #f3f7fe;
-  color: #3b82f6;
-  border: none;
-  border-radius: 8px;
-  width: fit-content;
-  height: 30px;
-  transition: .3s;
-}
-
-button:hover {
-  background-color: #3b82f6;
-  box-shadow: 0 0 0 5px #3b83f65f;
-  color: #fff;
-}
-
-
-
-hidden {
-    display: none;
-    height: 1px;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Vless | Noir7R | CLoudFlare</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4C+6PCWJ+8zzHcXQjXGp6n5Yh9rX0x5fOdPaOqO+e2X4R5C1aE/BSqPIG+8y3O6APa8w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="https://raw.githubusercontent.com/AFRcloud/BG/main/icons8-film-noir-80.png" type="image/png">
+    <style>
+    body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #f5f5f5;
+    background-color: #2d3b48; /* Dark Blue-gray */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
     overflow: hidden;
-}	
-	</style>
+}
 
-	<!-- Add FontAwesome library -->
-	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-  </head>
-  
-  <body>
-  <pre style='background-color: transparent; border: none;'>
-</pre>
-  <pre>
-<div id="header"><center><h2>VPN BY TAOOMATOA</h2></center>
-<em><span style="color: red;">NOTE:</span> Silahkan pilih server yang di inginkan.</em> </div> <center><button onclick="window.location.href='https://taoomatoa.github.io/vpntaoomatoa/serverid'">Server Indonesia</button>
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 3px;
+    background: rgba(0, 0, 0, 0.8); /* Dark transparent background */
+    backdrop-filter: blur(10px);
+    animation: fadeIn 1s ease-in-out;
+    overflow-y: auto;
+    max-height: 100vh;
+}
 
-<button onclick="window.location.href='https://taoomatoa.github.io/vpntaoomatoa/serversg'">Server Singapura</button>
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 15, 15, 0.4);
+    z-index: -1;
+}
 
-<button onclick="window.location.href='https://taoomatoa.github.io/vpntaoomatoa/serverpre'">Server Premium</button>
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
 
+.header h1 {
+    text-align: center;
+    margin: 10px 0 40px;
+    font-size: 42px;
+    color: #f39c12; /* Golden Yellow */
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
 
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
 
-<em><span style="color: red;">================================</em>
-</strong> LIST WILLCARD :</em>
-<em><span style="color: red;">================================</em>
-</span> ava.game.never.com</em>
-</span> zaintest.vuclip.com</em>
-</span> support.zoom.us</em>
-</span> zoomgov</em>
-</span> graph.instagram.com</em>
-<em><span style="color: red;">================================</em>
+.nav-buttons .button {
+    background-color: transparent;
+    border: 3px solid #f39c12; /* Golden Yellow */
+    color: #f39c12;
+    padding: 6px 12px;
+    font-size: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
 
-Chat Telegram saya : <a href="https://t.me/Pendekar19">Klik Disini</a></center>
-  </pre>
-  </body>
- 
+.nav-buttons .button:hover {
+    background-color: #f39c12; /* Golden Yellow */
+    color: #fff;
+    transform: scale(1.05);
+}
 
-  </html>
+.content {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.content.active {
+    display: block;
+    opacity: 1;
+}
+
+.config-section {
+    background: rgba(44, 62, 80, 0.7); /* Dark Slate Blue */
+    padding: 20px;
+    border: 2px solid #f39c12;
+    border-radius: 10px;
+    position: relative;
+    animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-30px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+.config-section h3 {
+    color: #e74c3c; /* Red */
+    font-size: 28px;
+    margin-top: 0;
+}
+
+.config-section p {
+    font-size: 16px;
+    color: #ecf0f1; /* Light Gray */
+}
+
+.config-toggle {
+    margin-bottom: 10px;
+}
+
+.config-content {
+    display: none;
+}
+
+.config-content.active {
+    display: block;
+}
+
+.config-block {
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgba(52, 152, 219, 0.2); /* Light Blue */
+    transition: background-color 0.3s;
+}
+
+.config-block h4 {
+    color: #2980b9; /* Blue */
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.config {
+    background-color: rgba(44, 62, 80, 0.3); /* Dark Slate Blue */
+    padding: 15px;
+    border-radius: 5px;
+    border: 2px solid #f39c12;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+.button {
+    background-color: transparent;
+    border: 2px solid #f39c12; /* Golden Yellow */
+    color: #f39c12;
+    padding: 4px 8px;
+    font-size: 12px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-right: 4px;
+}
+
+.button i {
+    margin-right: 3px;
+}
+
+.button:hover {
+    background-color: #f39c12; /* Golden Yellow */
+    color: #fff;
+}
+
+.config-divider {
+    height: 1px;
+    background: linear-gradient(to right, transparent, #fff, transparent);
+    margin: 20px 0;
+}
+
+.watermark {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.5);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    text-align: center;
+}
+
+.watermark a {
+    color: #e74c3c; /* Red */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.watermark a:hover {
+    color: #e74c3c; /* Red */
+}
+
+@media (max-width: 768px) {
+    .header h1 { font-size: 32px; }
+    .config-section h3 { font-size: 24px; }
+    .config-block h4 { font-size: 20px; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="header">
+            <h1>VLESS CLOUDFLARE</h1>
+        </div>
+        <div class="config-section">
+        <strong>LIST WILLCARD : </strong><br>
+        <br>
+        \u2730 ava.game.naver.com<br>
+        \u2730 graph.instagram.com<br>
+        \u2730 quiz.int.vidio.com<br>
+        \u2730 live.iflix.com<br>
+        \u2730 support.zoom.us<br>
+        \u2730 blog.webex.com<br>
+        \u2730 cache.netflix.com<br>
+        \u2730 investors.spotify.com<br>
+        \u2730 zaintest.vuclip.com<br>
+        </div>
+        <hr class="config-divider" />
+        <div id="vless" class="content active">
+            ${vlessConfigs}
+        </div>
+    </div>
+    <script>
+        function showContent(contentId) {
+            const contents = document.querySelectorAll('.content');
+            contents.forEach(content => {
+                content.classList.remove('active');
+            });
+            document.getElementById(contentId).classList.add('active');
+        }
+        function salinTeks() {
+            var teks = document.getElementById('teksAsli');
+            teks.select();
+            document.execCommand('copy');
+            alert('Teks telah disalin.');
+        }
+        function copyClash(elementId) {
+            const text = document.getElementById(elementId).textContent;
+            navigator.clipboard.writeText(text)
+            .then(() => {
+            const alertBox = document.createElement('div');
+            alertBox.textContent = "Copied to clipboard!";
+            alertBox.style.position = 'fixed';
+            alertBox.style.bottom = '20px';
+            alertBox.style.right = '20px';
+            alertBox.style.backgroundColor = 'yellow';
+            alertBox.style.color = '#fff';
+            alertBox.style.padding = '10px 20px';
+            alertBox.style.borderRadius = '5px';
+            alertBox.style.boxShadow = '0 4px 6px rgba(0,0,0,0.1)';
+            alertBox.style.opacity = '0';
+            alertBox.style.transition = 'opacity 0.5s ease-in-out';
+            document.body.appendChild(alertBox);
+            setTimeout(() => {
+                alertBox.style.opacity = '1';
+            }, 100);
+            setTimeout(() => {
+                alertBox.style.opacity = '0';
+                setTimeout(() => {
+                    document.body.removeChild(alertBox);
+                }, 500);
+            }, 2000);
+        })
+        .catch((err) => {
+            console.error("Failed to copy to clipboard:", err);
+        });
+        }
+function fetchAndDisplayAlert(path) {
+    fetch(path)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(\`HTTP error! Status: \${response.status}\`);
+            }
+            return response.json();
+        })
+        .then(data => {
+            const proxyStatus = data.proxyStatus || "Unknown status";
+            const alertBox = document.createElement('div');
+            alertBox.textContent = \`Proxy Status: \${proxyStatus}\`;
+            alertBox.style.position = 'fixed';
+            alertBox.style.bottom = '20px';
+            alertBox.style.right = '20px';
+            alertBox.style.backgroundColor = 'yellow';
+            alertBox.style.color = '#fff';
+            alertBox.style.padding = '10px 20px';
+            alertBox.style.borderRadius = '5px';
+            alertBox.style.boxShadow = '0 4px 6px rgba(0,0,0,0.1)';
+            alertBox.style.opacity = '0';
+            alertBox.style.transition = 'opacity 0.5s ease-in-out';
+            document.body.appendChild(alertBox);
+            
+            setTimeout(() => {
+                alertBox.style.opacity = '1';
+            }, 100);
+            
+            setTimeout(() => {
+                alertBox.style.opacity = '0';
+                setTimeout(() => {
+                    document.body.removeChild(alertBox);
+                }, 500);
+            }, 2000);
+        })
+        .catch((err) => {
+            alert("Failed to fetch data or invalid response.");
+        });
+}
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text)
+                .then(() => {
+                    const alertBox = document.createElement('div');
+                    alertBox.textContent = "Copied to clipboard!";
+                    alertBox.style.position = 'fixed';
+                    alertBox.style.bottom = '20px';
+                    alertBox.style.right = '20px';
+                    alertBox.style.backgroundColor = 'yellow';
+                    alertBox.style.color = '#fff';
+                    alertBox.style.padding = '10px 20px';
+                    alertBox.style.borderRadius = '5px';
+                    alertBox.style.boxShadow = '0 4px 6px rgba(0,0,0,0.1)';
+                    alertBox.style.opacity = '0';
+                    alertBox.style.transition = 'opacity 0.5s ease-in-out';
+                    document.body.appendChild(alertBox);
+                    setTimeout(() => {
+                        alertBox.style.opacity = '1';
+                    }, 100);
+                    setTimeout(() => {
+                        alertBox.style.opacity = '0';
+                        setTimeout(() => {
+                            document.body.removeChild(alertBox);
+                        }, 500);
+                    }, 2000);
+                })
+                .catch((err) => {
+                    console.error("Failed to copy to clipboard:", err);
+                });
+        }
+
+        function toggleConfig(button, show, hide) {
+            const configContent = button.nextElementSibling;
+            if (configContent.classList.contains('active')) {
+                configContent.classList.remove('active');
+                button.textContent = show;
+            } else {
+                configContent.classList.add('active');
+                button.textContent = hide;
+            }
+        }
+    <\/script>
+</body>
+</html>`;
